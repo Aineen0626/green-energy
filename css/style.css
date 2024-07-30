@@ -1,1 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    background-color: #f2e0c6;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: green;
+    display: inline-block;
+}
+
+.fa-solid {
+    margin-left: 5px;
+}
+
+header {
+    background-color: #B5A862;
+    padding: 1em;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #FFFFFF;
+    display: block;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #AE643D;
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+header nav ul li:nth-child(-n+3) {
+    padding-bottom: 0.7rem; 
+}
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding: 1em;
+}
+
+#c1 {
+    margin-right: 2rem;
+}
+
+#c2 {
+    margin-right: 2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.controls button {
+    background-color: #6E864A;
+    color: #F5FFC3;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.controls .active-button {
+    background-color: orange;
+}
+
+footer {
+    margin-top: auto;
+    padding: 5px;
+    background-color: #B5A862;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+  
+footer li {
+    margin-right: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #AE643D;
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.fa-brands {
+    font-size: 2rem;
+}
+
+#dynamic-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: darkgreen;
+}
+#dynamic-content p {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    color: darkolivegreen;
+}
+#dynamic-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+    body {
+        background-color: #f2e0c6;
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5;
+        width: 60rem;
+        height: auto;
+        display: grid;
+        place-content: center;
+        margin: auto;
+    }
+    
+    header {
+        background-color: #B5A862;
+        padding: 1em;
+        text-align: center;
+        width: 60rem;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 0;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: green;
+    }
+
+    .fa-solid {
+        margin-left: 5px;
+    }
+    
+    header nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 2px solid #FFFFFF;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #AE643D;
+        font-family: "Merriweather", serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    header nav ul li:nth-child(-n+3) {
+        padding-bottom: 0; 
+    }
+    
+    main {
+        /* display: grid;
+        place-content: center; */
+        padding: 0;
+    }
+    
+    #c1 {
+        margin-right: 2rem;
+    }
+    
+    #c2 {
+        margin-right: 2rem;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .controls button {
+        background-color: #6E864A;
+        color: #F5FFC3;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .controls .active-button {
+        background-color: orange;
+    }
+    
+    footer {
+        margin-top: auto;
+        background-color: #B5A862;
+        padding: 1em;
+        text-align: center;
+        clear: both;
+        width: 100%;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border: 2px solid #FFFFFF;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+      
+    footer li {
+        margin-right: 10px;
+        margin-left: 5px;
+        padding: 0;
+        text-decoration: none;
+        color: #AE643D;
+        font-family: "Merriweather", serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .fa-brands {
+        font-size: 2rem;
+    }
+
+    footer ul li:nth-child(-n+2) {
+        padding-bottom: 0; 
+    }
+
+    #dynamic-content {
+        display: grid;
+        grid-template-areas: "h2 h2"
+                             "img p";
+    }
+    
+    #dynamic-content h2 {
+        grid-area: h2;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: darkgreen;
+        margin-left: 0;
+    }
+    #dynamic-content p {
+        grid-area: p;
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        color: darkolivegreen;
+        margin-top: 0;
+    }
+    #dynamic-content img {
+        grid-area: img;
+        width: 85%;
+        height: auto;
+        margin-bottom: 4rem;
+        margin-right: 1rem;
+        margin-left: 0;
+    }
+  }
